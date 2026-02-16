@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Catamaran', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2c2c2c;
+}
+
+/************** ヘッダーエリア ************************/
+header {
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+header .itiran ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header .itiran li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+header .itiran ul>span {
+    border: 2px solid red;
+    color: red;
+}
+
+header .itiran ul>li {
+    border-top: 2px #2c2c2c;
+    border-bottom: 2px #2c2c2c;
+    border-color: #2c2c2c;
+    border-style: solid;
+}
+
+header h1 {
+    font-size: 46px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+header .best ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+header .best ul li {
+
+    margin: 10px 20px;
+    padding: 5px;
+    display: inline-block;
+}
+
+header .best ul>li {
+    border-top: #2c2c2c;
+    border-bottom: #2c2c2c;
+    border-color: #2c2c2c;
+    border-style: solid;
+}
+
+header .best span {
+    background-color: red;
+    color: white;
+    /* border: 2px solid red;
+    color: red; */
+}
+
+header .best ul li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline double;
+}
+
+/************ メインエリア **************/
+main section {
+    width: 1240px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+main .item {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main section div ul {
+    margin: 0 5px;
+}
+
+main .bestSec table {
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+main .bestSec table th {
+    font-size: 24px;
+    text-align: center;
+}
+
+main section p {
+    margin-top: 10px;
+}
+
+main ul div {
+    width: 300px;
+
+    background-color: lightgray;
+}
+
+/************** フッターエリア *****************/
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
+
+footer div {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div nav {
+    margin: 10px;
+}
+
+/* footer nav ul>span {
+    background-color: white;
+    color: blue;
+} */
+
+/************** サブページエリア **************/
+.subPage h2,
+.subPage h3,
+.subPagediv {
+    text-align: center;
+}
+
+main h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.contentsDetailSec {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contentsDetailSec div img {
+    width: 250px;
+}
+
+/*************** スマホエリア *******************/
+@media screen and (max-width: 640px) {
+    .contentsDetailSec {
+        display: block;
+    }
+
+    header,
+    main section,
+    main .bestSec table,
+    main ul div,
+    footer div,
+    .contentsDetailSec div img,
+    header .best li {
+        width: 100%;
+    }
+
+    header .best ul,
+    header .itiran ul {
+        display: block;
+    }
+
+    header {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+}
